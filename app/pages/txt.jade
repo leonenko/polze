@@ -1,0 +1,63 @@
+include /blocks/container/container
+include /blocks/top-navigation/top-navigation
+include /blocks/mobile-navigation/mobile-navigation
+include /blocks/header/header
+include /blocks/logo/logo
+include /blocks/lang-switcher/lang-switcher
+include /blocks/brands/brands
+include /blocks/footer/footer
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Project Template';
+
+block content
+	+container
+		+header()
+			+container()
+				+b('button').nav-hamburger
+					span
+					span
+					span
+						
+				+b.header__logo
+					+logo()
+
+				+top-navigation()
+
+				+lang-switcher()
+
+
+		+b.content
+			+e.header
+				h1
+					| h1
+
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			+e.body
+				h2
+					| h2
+				h2
+					| h2
+
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, saepe cupiditate? Blanditiis officiis quam sed totam illum, molestiae. Iusto dolores ad deleniti, maiores, eveniet ipsum praesentium. Vitae quod fuga, rem.
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, saepe cupiditate? Blanditiis officiis quam sed totam illum, molestiae. Iusto dolores ad deleniti, maiores, eveniet ipsum praesentium. Vitae quod fuga, rem.
+
+				h3
+					| h3
+				h3
+					| h3
+
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem illum facilis consectetur ratione repellendus reprehenderit veritatis illo ipsam doloribus nesciunt. Officia facere recusandae, aliquid cupiditate quidem rem molestiae repellat accusantium iste ratione, eveniet animi earum consequuntur, numquam distinctio. Ducimus asperiores sint aperiam dignissimos error nulla at officia sit adipisci soluta?
+
+
+		+brands()
+
+		+footer()
+
+		+mobile-navigation()

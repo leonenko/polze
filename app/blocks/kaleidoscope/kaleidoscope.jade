@@ -1,0 +1,16 @@
+mixin kaleidoscope()
+	+b.kaleidoscope&attributes(attributes)
+		block
+
+		+b.preloader-wrapper.active
+			+b.preloader
+				+e.item#item1
+				+e.item#item2
+				+e.item#item3
+				+e.item#item4
+
+		+b#clickHack
+		//- +b('canvas')#capture(style="display: none;")
+		//- +b('canvas')#capture
+
+		#kaleidoscope__items

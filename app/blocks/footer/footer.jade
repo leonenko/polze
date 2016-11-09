@@ -1,0 +1,34 @@
+include /blocks/social-list/social-list
+
+mixin footer()
+	+b.footer&attributes(attributes)
+		+container()
+			+b.footer__logo
+				+logo()
+
+			+b.footer__contacts-info
+				+b.wrapper
+					+b.address
+						+icon('address', 'true').address-icon
+						p
+							| Police Zebra 
+							br
+							| Landsberger Str. 218 
+							br
+							| 12623 Berlin  |  Germany
+
+					+b.contacts-list
+						p
+							a(href="tel:+49 (0) 30 - 469 990 788")
+								+icon('phone', 'true').phone-icon
+								| Phone: +49 (0) 30 - 469 990 788
+						p
+							+icon('fax', 'true').fax-icon
+							| Fax: +49 (0) 30 - 377 194 13
+
+						p
+							a(href="mailto:info@policezebra.eu").mail
+								+icon('mail', 'true').mail-icon
+								| info@policezebra.eu
+
+				+social-list()

@@ -1,0 +1,28 @@
+mixin contact()
+	+b.contact&attributes(attributes)
+		
+		+e.form
+			form
+				+e.row
+					+e.column
+						label
+							| Ihr Name*
+							+e('input').control(type="text")
+						label
+							| Ihre E-mail*
+							+e('input').control(type="text")
+
+					+e.column
+						label
+							| Ihre Nachricht*
+							+e('textarea').control
+
+				+e('button').button.bordered
+					| contact us
+
+
+			+e.text-success
+				h2
+					| Заголовок, если нужно
+				p
+					| надпись в полупрозрачном белом прямоугольнике. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, voluptates?

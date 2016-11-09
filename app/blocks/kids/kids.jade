@@ -1,0 +1,31 @@
+mixin kids()
+	+b.kids&attributes(attributes)
+		+container()
+			+b.kids__images
+				+category-title()
+					| Kids
+
+				+e.item.bg1
+				+e.item.bg2
+
+			+b.kids__content
+
+				+b.kids__articles
+					+b.article
+						+e.logo
+							+icon('police_bodykid').police_bodykid
+
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					+b.steps
+					
+					+b.article
+						+e.logo
+							+icon('police_zebra_junior').police_zebra_junior
+
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+
+

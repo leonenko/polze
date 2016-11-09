@@ -1,0 +1,166 @@
+#creation-trigger
+	position relative
+	
+.creation
+	// margin-top 50px
+	// display flex
+	// flex-direction column
+	background url('../images/creation-bg.png') center
+	padding-top 100px
+	// height 100vh
+	position relative
+	// min-height 1200px
+		
+
+	&__mobile-part
+		display none
+		
+		+to-width(1000px)
+			display block
+			
+			.stat
+				display inline-block
+				vertical-align top
+				width 100%
+				
+			.slick-list
+				overflow hidden
+				
+			.slick-track
+				display flex
+					
+				+landscape()
+					height calc(100vh - 70px)
+					
+				
+				.creation__slide
+					text-align center
+					
+					+mobile(orientation: landscape)
+						height 100vh
+						
+					img
+						display inline-block
+						vertical-align middle
+						
+						+mobile(orientation: landscape)
+							height 100%
+				
+			.slick-dots
+				display flex !important
+				justify-content center
+				margin-top 25px
+				
+				li
+					size 10px
+					border-radius 50%
+					font-size 0
+					background-color #f4343a
+					margin 0 5px
+					
+					button
+						background none
+						border 0
+					
+					&.slick-active
+						background-color white
+		
+	&__mobile-slider
+		display none
+		
+		+to-width(1000px)
+			display block
+			margin-top 57px
+			
+			img
+				max-width 100%
+				
+				+landscape()
+					height calc(100vh - 70px)
+
+	+to-width(1000px)
+		background: #0e2542
+		padding-top: 60px
+
+	&__descr
+		text-align center
+		display flex
+		justify-content flex-start
+		align-items center
+		flex-direction column
+		// flex-basis 100%
+
+		+to-width(1000px)
+			padding: 0 20px
+
+		.category-title
+			font-size 80px
+			line-height 1
+			margin-bottom 45px
+
+			+to-width(450px)
+				font-size 30px
+				line-height 40px
+
+		p
+			color white
+			font-size 16px
+			line-height 28px
+			max-width 600px
+
+			+to-width(450px)
+				font-size 13px
+				line-height 24px
+
+
+	&__info
+		display flex
+		align-items center
+		justify-content center
+		position relative
+		// padding 80px 0 100px
+		min-height 100vh
+		background url('../images/creation-bg.png') center
+
+		+to-width(1000px)
+			background: #0e2542
+			display none
+
+		// .stat
+		// 	position absolute
+		// 	right 40px
+
+	.parallax
+		display flex
+		justify-content center
+		align-content center
+		// flex-basis 100%
+		// height 100%
+		min-height 100vh
+		min-width 600px
+		margin 0 auto
+		position relative
+
+		&__item
+			// opacity 0
+			visibility hidden
+			position absolute
+			top 50%
+			margin-top -300px
+			left 0
+
+		+to-width(1000px)
+			flex-direction: column
+			min-height: auto
+			min-width: 0
+			padding: 0 30px
+
+			.el1
+				visibility: visible
+				opacity: 1
+				position: relative
+				margin-top: 57px
+				max-width: 100%
+
+
+

@@ -1,0 +1,129 @@
+.brands-list
+	display block
+	margin-x 110px
+	
+	+to-width(1000px)
+		margin-x 0
+		
+.slider-logo
+	display block
+	margin-x auto
+	margin-bottom -120px
+	position relative
+	z-index 1		
+	
+	+to-width(1000px)
+		size 100px 100px
+		margin-bottom 20px
+		
+
+.brand
+	&-slider
+		margin-bottom 80px
+		
+		+to-width(1000px)
+			margin-bottom 20px
+		
+		.slick-prev
+			background url('../images/arrow_s.svg') no-repeat
+			background-color transparent
+			border 0
+			size 25px 50px
+			font-size 0
+			background-size 100%
+			position absolute
+			left 30px
+			top 50%
+			z-index 1
+			transform rotate(180deg)
+			margin-top -25px
+			
+			+to-width(1000px)
+				left 20px
+				size 13px 25px
+				margin-top -17px
+			
+		.slick-next
+			background url('../images/arrow_s.svg') no-repeat
+			background-color transparent
+			border 0
+			size 25px 50px
+			font-size 0
+			background-size 100%
+			position absolute
+			right 30px
+			top 50%
+			z-index 1
+			margin-top -25px
+			
+			+to-width(1000px)
+				right 20px
+				size 13px 25px
+				margin-top -17px
+	
+		&__item
+			display flex
+			flex-direction column
+			justify-content center
+			align-items center
+			
+		.image
+			width 100%
+			
+		.logo
+			max-width 100%
+			margin-bottom -120px
+			position relative
+			z-index 1
+			margin-x auto
+			
+	&__item
+		display flex
+		align-items center
+		margin-bottom 80px
+		
+		+to-width(1000px)
+			flex-direction column
+		
+	&__image
+		margin-right 80px
+		
+		+to-width(1000px)
+			margin-right 0
+			margin-bottom 40px
+			width 100%
+			text-align center
+			
+			img
+				max-width 100%
+		
+
+	&__descr
+		a
+			color #185c97
+			font-family $lusitana
+			text-decoration none
+			
+			h3
+				text-transform initial
+				font-size 35px
+				font-weight 700
+				line-height 1
+				display inline-block
+				border-bottom 1px #b9cee0 solid
+				transition border-color .3s;
+				margin-bottom 20px
+				padding 0
+				
+			+to-width(1000px)
+				display inline-block
+				
+				h3
+					border-bottom 0
+					color #000
+					font-size 25px
+					line-height 35px
+				
+			&:hover
+				h3
+					border-bottom-color transparent

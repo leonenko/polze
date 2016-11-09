@@ -1,0 +1,48 @@
+mixin mobile-navigation()
+	+b.mobile-navigation&attributes(attributes)
+		ul
+			+e('li').item
+				+e('a').link(href="#")
+					| First level 1
+
+					+b('button').submenu-toggle
+
+			+e('li').item
+				+e('a').link(href="#")
+					| First level, sub selected
+
+					+b('button').submenu-toggle
+
+				+b('ul').submenu
+					+e('li').item
+						+e('a').link(href="#")
+							|Second level 1
+
+					+e('li').item
+						+e('a').link(href="#").active
+							|Second level if active
+
+					+e('li').item
+						+e('a').link(href="#")
+							|Second level 3
+
+					+e('li').item
+						+e('a').link(href="#")
+							|Second level 4
+
+					+e('li').item
+						+e('a').link(href="#")
+							|Second level 5
+
+					+e('li').item
+						+e('a').link(href="#")
+							|Second level 6 1st line Second level 6 2nd line
+
+			+e('li').item
+				+e('a').link(href="#")
+					| First level 3
+
+			+e('li').item.active
+				+e('a').link(href="#").active
+					| First level, if active
+					+b('button').submenu-toggle

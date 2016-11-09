@@ -1,0 +1,49 @@
+.top-navigation
+	display flex
+	margin-top -50px
+	margin-left 65px
+	
+	+to-width(1010px)
+		display none
+	
+	a
+		color black
+		font-family $raleway
+		font-size 16px
+		font-weight 700
+		line-height 30px
+		text-transform uppercase
+		text-decoration none
+		margin 0 25px
+
+
+.nav-hamburger
+	display none
+	border 0
+	background-color transparent
+	
+	+to-width(1010px)
+		display block
+		position absolute
+		top 0
+		left 0
+		size 50px
+		padding 17px 13px
+		z-index 9
+		transition background-color .3s
+		
+		&:hover, &.active
+			background-color #00315b
+			
+			span
+				background-color #fff
+		
+		span
+			width 24px
+			height 2px
+			background #00315b
+			display block
+			margin-bottom 5px
+			
+			&:last-child
+				margin-bottom 0

@@ -1,0 +1,132 @@
+.contact
+	display flex
+	justify-content center
+	align-items center
+	background url('../images/contact-form-bg.jpg') center no-repeat
+	background-size cover
+	min-height 620px
+
+	+to-width(1000px)
+		min-height: 0
+		padding-top: 70px
+		padding-bottom: 70px
+		background url('../images/contact-form-bg.jpg') left center no-repeat
+		background-size cover
+
+	&__form
+		display inline-flex
+		position relative
+
+		+to-width(1000px)
+			width: 100%
+			display: flex
+			justify-content: center
+			padding: 0 20px
+
+			form
+				width: 100%
+
+		&.hide
+			form
+				visibility hidden
+				opacity 0
+
+		label
+			color black
+			font-family $raleway
+			font-size 14px
+			font-weight 500
+			line-height 24px
+			display flex
+			flex-direction column
+			margin-top 20px
+
+			+to-width(1000px)
+				font-weight: 700
+
+			input[type=text]
+				size 320px 50px
+				border 0
+
+				+to-width(1000px)
+					width: auto
+
+			textarea
+				size 320px 150px
+				border 0
+				resize none
+
+				+to-width(1000px)
+					width: auto
+
+	&__control
+		background-color rgba(#fff, .85)
+		margin-top 5px
+		padding 15px
+
+		&.error
+			background-color #7f5730
+
+	&__row
+		display flex
+
+		+to-width(1000px)
+			flex-direction: column
+
+	&__column
+		display flex
+		flex-direction column
+		padding 0 10px
+
+		+to-width(1000px)
+			padding: 0
+
+	&__button
+		display block
+		padding 15px 102px
+		margin 0 auto
+		margin-top 50px
+		font-weight 700
+
+		+to-width(1000px)
+			width: 100%
+			padding 15px 30px
+
+		&.bordered
+			border 3px #185c97 solid
+			color #185c97
+			font-size 14px
+			line-height 1
+			text-transform uppercase
+			background-color transparent
+			transition background-color .3s
+
+			&:hover
+				background-color #185c97
+				color #fff
+
+
+	&__text-success
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
+		background-color rgba(#fff, .85)
+		padding 25px
+		font-family $raleway
+		opacity 0
+		visibility hidden
+
+		&.show
+			visibility visible
+			opacity 1
+
+		h2
+			font-size 32px
+			font-weight 700
+			margin-bottom 10px
+
+		p
+			font-size 16px
+			line-height 28px

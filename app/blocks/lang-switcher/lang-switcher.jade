@@ -1,0 +1,17 @@
+mixin lang-switcher()
+	+b.lang-switcher&attributes(attributes)
+		+b.dropdown
+			+e('a').button(href="#")
+				+b.icon.lang-de
+
+			+e.menu
+				ul
+					li
+						a(href="#")
+							.icon.lang-ru
+					li
+						a(href="#")
+							.icon.lang-de
+					li
+						a(href="#")
+							.icon.lang-en

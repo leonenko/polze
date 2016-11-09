@@ -1,0 +1,26 @@
+.brands
+	display flex
+	padding 60px 110px
+	background-color #1c1c1c
+
+	+to-width(1000px)
+		padding-left: 0
+		padding-right: 0
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	&__item
+		width 16.66%
+
+		+to-width(1000px)
+			width: auto
+			max-width: 125px
+
+		svg
+			max-width 100%
+			padding 0 35px
+			fill #bbb
+
+			+to-width(1000px)
+				padding: 0 10px

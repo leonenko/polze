@@ -1,0 +1,102 @@
+include /blocks/article/article
+include /blocks/article-title/article-title
+include /blocks/container/container
+include /blocks/category-title/category-title
+
+mixin adults()
+	+b.adults&attributes(attributes)
+		+container()
+			+category-title()
+				| Adults
+
+			+b.adults__images
+				+e('img').item.small(src="./assets/images/adults-sm.jpg")
+				+e('img').item.large(src="./assets/images/adults-lg.jpg")
+
+			+b.stripes
+				img(src="./assets/images/stripes.svg", alt="")
+
+			+b.articles
+
+				#i1-trigger
+
+				+b.article.right-aligned#i1
+
+					+e.container
+						+e.content
+							+e.logo.black-squeeze
+								+icon('police_international')
+
+							+e.text
+								hr
+									
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+						+e.image
+							img(src="./assets/images/police-international-img.jpg")
+
+							+e.logo.black-squeeze
+								+icon('police_international')
+
+				#i2-trigger
+
+
+				+b.article.left-aligned#i2
+					+article-title().title1
+						+b.steps
+							img(src="./assets/images/fpleft.svg", alt="").left
+							img(src="./assets/images/fpright.svg", alt="").right
+
+						+b('img')(src="./assets/images/high-quality-title.png")
+
+					+e.container
+						+e.image
+							img(src="./assets/images/police-zebra-img.jpg")
+
+							+e.logo.prussian-blue
+								+icon('police_zebra')
+
+						+e.content
+							+e.logo.prussian-blue
+								+icon('police_zebra')
+
+							+e.text
+								hr
+
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+				#i3-trigger
+
+				+b.article.right-aligned#i3
+					+article-title().title2
+						+b('img')(src="./assets/images/always-cool-title.png")
+
+						+b.zebra
+							img(src="./assets/images/zebra.svg", alt="")
+
+					+e.container
+						+e.content
+							+e.logo.spring-wood
+								+icon('barbari')
+
+							+e.text
+								hr
+									
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+						+e.image
+							img(src="./assets/images/barbari-img.jpg")
+
+							+e.logo.spring-wood
+								+icon('barbari')
+
+						
+
+
+
+			//- +icon('stripes', 'false').stripes
+
+

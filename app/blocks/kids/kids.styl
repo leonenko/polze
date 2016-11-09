@@ -1,0 +1,118 @@
+.kids
+	display block
+	margin-top -1px
+	padding-top 119px
+	padding-bottom 150px
+
+	+to-width(900px)
+		padding-top: 70px
+
+	&__images
+		position relative
+		display flex
+		justify-content center
+		align-items center
+		height 600px
+
+		+to-width(900px)
+			height: 350px
+
+		+to-width(500px)
+			height: 160px
+
+		.category-title
+			// position absolute
+			font-size 200px
+			z-index 1
+
+			+to-width(900px)
+				font-size: 100px
+
+			+to-width(500px)
+				font-size 45px
+
+	&__item
+		min-height 600px
+		width 50%
+		background-size cover !important
+		position absolute
+		top 0
+		bottom 0
+
+		+to-width(900px)
+			min-height: 350px
+
+		+to-width(500px)
+			min-height: 160px
+
+		&.bg1
+			background url('../images/kids-bg-1.jpg') center no-repeat
+			// background-attachment fixed
+			left 0
+		&.bg2
+			background url('../images/kids-bg-2.jpg') center no-repeat
+			// background-attachment fixed
+			right 0
+
+	&__articles
+		display flex
+		justify-content center
+		align-items flex-start
+
+		+to-width(1000px)
+			flex-direction column
+
+		.article
+			width 50%
+			text-align center
+			margin 0 100px
+
+			+to-width(1000px)
+				width 100%
+				margin: 0
+				padding: 0 20px
+
+			&__logo
+				height 310px
+				align-items flex-end
+				padding-bottom 60px
+
+			p
+				font-size 14px
+				line-height 28px
+				font-weight 400
+
+		.article__police_bodykid
+			max-height 120px
+
+		.article__police_zebra_junior
+			fill #7f5730
+
+	&__content
+		position relative
+
+	.steps
+		background url('../images/kids-steps.png') center no-repeat
+		width 58px
+		height 413px
+		position absolute
+		left 50%
+		margin-left -29px
+		top 48px
+
+		+to-width(1000px)
+			position: static
+			transform rotate(90deg)
+			top auto
+			left: auto
+			size 39px 280px
+			background-size: 100% 100%
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: -150px
+			margin-top: -50px
+
+
+
+
+

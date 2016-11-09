@@ -1,0 +1,48 @@
+include /blocks/stat/stat
+
+mixin creation()
+	+b.creation&attributes(attributes)
+		+e.descr
+			+category-title()
+				| The creation
+
+			p
+				| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+
+		+b#creation-trigger
+
+		+e.mobile-part
+
+			+e.mobile-slider
+				+e.slide
+					+e('img').item(src="assets/images/creation-img1.png")
+				+e.slide
+					+e('img').item(src="assets/images/scroll-images/police_zebra_tshirt_1.png")
+				+e.slide
+					+e('img').item(src="assets/images/scroll-images/police_zebra_tshirt_2.png")
+				+e.slide
+					+e('img').item(src="assets/images/scroll-images/police_zebra_tshirt_3.png")
+				+e.slide
+					+e('img').item(src="assets/images/scroll-images/police_zebra_tshirt_4.png")
+				+e.slide
+					+e('img').item(src="assets/images/scroll-images/police_zebra_tshirt_5.png")
+
+			+stat()
+		
+		+e.info
+			+b.parallax
+				+e('img').item.el1(src="assets/images/creation-img1.png")
+				+e('img').item.el2(src="assets/images/scroll-images/police_zebra_tshirt_1.png")
+				+e('img').item.el3(src="assets/images/scroll-images/police_zebra_tshirt_2.png")
+				+e('img').item.el4(src="assets/images/scroll-images/police_zebra_tshirt_3.png")
+				+e('img').item.el5(src="assets/images/scroll-images/police_zebra_tshirt_4.png")
+				+e('img').item.el6(src="assets/images/scroll-images/police_zebra_tshirt_5.png")
+
+				+stat()
+
+
+			
+
+
+

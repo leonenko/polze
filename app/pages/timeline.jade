@@ -1,0 +1,45 @@
+include /blocks/container/container
+include /blocks/top-navigation/top-navigation
+include /blocks/mobile-navigation/mobile-navigation
+include /blocks/header/header
+include /blocks/logo/logo
+include /blocks/lang-switcher/lang-switcher
+include /blocks/timeline/timeline
+include /blocks/brands/brands
+include /blocks/footer/footer
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Project Template';
+
+block content
+	+container
+		+header()
+			+container()
+				+b('button').nav-hamburger
+					span
+					span
+					span
+				+b.header__logo
+					+logo()
+
+				+top-navigation()
+
+				+lang-switcher()
+
+
+		+b.content
+			+e.header
+				h1
+					| our story
+
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+			+timeline()
+
+
+		+brands()
+
+		+footer()
+		+mobile-navigation()

@@ -1,0 +1,119 @@
+.footer
+	background-color #000
+	padding-top 40px
+	padding-bottom 60px
+
+	.container
+		display flex
+		justify-content space-between
+		max-width 980px
+
+		+to-width(1000px)
+			flex-direction: column
+			text-align: center
+
+	&__logo
+		svg
+			display inline-block
+			vertical-align top
+			size 175px 122px
+			fill white
+
+	.address
+		display flex
+
+		svg
+			size 13px 18px
+			fill #00315b
+			margin-right 10px
+			margin-top 4px
+
+		p
+			color #a2a2a2
+			font-size 14px
+			line-height 28px
+
+	&__contacts
+		&-info
+			width 100%
+			padding-left 170px
+
+			.wrapper
+				display flex
+				justify-content space-between
+				align-items flex-start
+				width 100%
+
+				+to-width(1000px)
+					flex-direction: column
+					align-items: center
+					justify-content: center
+					margin-top: 60px
+
+					.adress
+						margin-bottom: 50px
+
+					svg
+						display: none
+
+			+to-width(1000px)
+				padding-left: 0
+
+				.social-list
+					margin-left: 0
+					justify-content: center
+
+	.contacts-list
+		+to-width(1000px)
+			margin-top 50px
+			
+		svg
+			size 13px 18px
+			fill #00315b
+			position absolute
+			left 0
+			
+			&.phone-icon
+				size 11px 18px
+				left 3px
+				
+			&.fax-icon
+				size 15px 16px
+				
+			&.mail-icon
+				size 17px 12px
+				top 2px
+				
+		p
+			padding-left 30px
+			position relative
+			margin-bottom 15px
+			
+			+to-width(1000px)
+				padding-left 0
+
+		p, a
+			color #a2a2a2
+			font-size 14px
+			display flex
+			align-items center
+			
+			+to-width(1000px)
+				justify-content center
+
+		a
+			text-decoration none
+			line-height 1
+			margin 0
+
+			&.mail
+				display inline
+				color #347fbf
+				border-bottom 1px rgba(#347fbf, .3) solid
+
+				&:hover
+					border-bottom-color transparent
+
+			&:hover
+				color #5f9fd6
+

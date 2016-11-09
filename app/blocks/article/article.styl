@@ -1,0 +1,168 @@
+.article
+
+	&__container
+		display flex
+		position relative
+
+		+to-width(1000px)
+			padding 0 20px !important
+			flex-direction column
+
+	&__title
+		img
+			max-width 100%
+
+	&__image
+		position relative
+		z-index 2
+
+		.article__logo
+			display none
+
+		+to-width(1000px)
+			display flex
+			margin-left 0 !important
+			margin-top 0 !important
+			justify-content center
+			align-items center
+			width: 100%
+
+			img
+				width 50%
+
+			.article__logo
+				display flex
+				width 50%
+
+				svg
+					max-width 50%
+
+		+to-width(700px)
+			.article__logo
+				height 140px
+				padding 0 10px
+
+	&.right-aligned
+		.article__title
+			img
+				left 30px
+				
+		.article__content
+			left 0 !important
+
+		.article__container
+			justify-content flex-end
+			padding-right 70px
+
+			+to-width(1000px)
+				flex-direction column-reverse
+
+		.article__image
+			margin-top 60px
+			margin-left -60px
+			right 0 !important
+			left auto !important
+
+		.article__text
+			padding-left 40px
+			padding-right 140px
+
+			+to-width(1000px)
+				padding 0 !important
+
+	&.left-aligned
+		.article__title
+			img
+				right 30px
+
+		.article__container
+			justify-content flex-start
+			align-items flex-start
+
+		.article__content
+			// margin-top 60px
+			right 0 !important
+
+			+to-width(1000px)
+				margin-top 0
+
+		.article__image
+			margin-top 60px
+			
+			+from-width(1000px)
+				right -60px !important
+
+		.article__text
+			padding-left 130px
+			padding-right 40px
+
+			+to-width(1000px)
+				padding 0 !important
+
+		.article__title
+			text-align right
+
+	&__content
+		width 500px
+		display flex
+		flex-direction column
+		position relative
+
+		+to-width(1000px)
+			width 100%
+
+			.article__logo
+				display none
+
+	&__logo
+		height 260px
+		display flex
+		justify-content center
+		align-items center
+		position relative
+		left 0 !important
+
+		&.spring-wood
+			background-color #f6f4ec
+			padding 0 50px
+			
+			+to-width(550px)
+				padding 0 30px
+				
+			+to-width(450px)
+				padding 0 15px
+
+			svg
+				fill #231f20
+
+		&.prussian-blue
+			background-color #00315b
+
+			svg
+				fill #fff
+
+		&.black-squeeze
+			background-color #ebf5f8
+
+			svg
+				fill #231f20
+
+	&__text
+
+
+		hr
+			size 30px 3px
+			margin-bottom 30px
+			margin-top 50px
+			border 0
+			background-color black
+		p
+			color black
+			font-size 14px
+			line-height 28px
+			font-weight 400
+
+			+to-width(1000px)
+				font-size 13px
+				font-weight 400
+				line-height 24px

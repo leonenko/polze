@@ -1,0 +1,55 @@
+include /blocks/container/container
+include /blocks/header/header
+include /blocks/logo/logo
+include /blocks/top-navigation/top-navigation
+include /blocks/mobile-navigation/mobile-navigation
+include /blocks/lang-switcher/lang-switcher
+include /blocks/kaleidoscope/kaleidoscope
+include /blocks/scroll-btn/scroll-btn
+include /blocks/adults/adults
+include /blocks/category/category
+include /blocks/kids/kids
+include /blocks/creation/creation
+include /blocks/contact/contact
+include /blocks/brands/brands
+include /blocks/footer/footer
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Project Template';
+
+block content
+	+container
+		+header().main-page
+			+container()
+				+b('button').nav-hamburger
+					span
+					span
+					span
+
+				+b.header__logo
+					+logo()
+
+				+top-navigation()
+
+				+lang-switcher()
+
+		+kaleidoscope()
+			+scroll-btn()
+
+
+		+category()
+			+adults()
+
+		+category()
+			+kids()
+
+		+creation()
+
+		+contact()
+
+		+brands()
+
+		+footer()
+
+		+mobile-navigation()

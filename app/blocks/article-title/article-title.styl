@@ -1,0 +1,42 @@
+.article__title
+	color #e8e8e8
+	font-family $lusitana
+	font-size 105px
+	font-weight 700
+	line-height 120px
+	text-transform uppercase
+
+	img
+		position absolute
+		width 62%
+
+	&.title1
+		margin 70px 0
+		min-height 125px
+
+		+to-width(1000px)
+			margin 40px 0
+			min-height 60px
+
+		+to-width(550px)
+			margin 40px 0
+			min-height 25px
+
+	&.title2
+		margin 70px 0 110px
+		min-height 120px
+
+		+to-width(1000px)
+			margin 40px 0
+			min-height 70px
+
+		+to-width(550px)
+			min-height 25px
+
+			img
+				left: 20px !important
+
+			.zebra
+				img
+					left: 30px !important
+					top: 30px

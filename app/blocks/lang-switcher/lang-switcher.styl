@@ -1,0 +1,53 @@
+// include 
+
+.lang-switcher
+	position absolute
+	right 40px
+	top 41px
+	
+	+to-width(1010px)
+		top 5px
+		right 6px
+	
+	.lang-de
+		display inline-block
+		vertical-align top
+		retinaSprite $lang_de_group
+	
+	.lang-ru
+		display inline-block
+		vertical-align top
+		retinaSprite $lang_ru_group
+	
+	.lang-en
+		display inline-block
+		vertical-align top
+		retinaSprite $lang_en_group
+		
+	.dropdown
+		display inline-block
+		vertical-align top
+		
+		&__button
+			background-color #e8e8e8
+			padding 10px
+			display inline-block
+			vertical-align top
+			cursor pointer
+			
+		&.active
+			.dropdown__menu
+				display block !important
+			
+		&__menu
+			display none
+			
+			ul
+				padding-bottom 5px
+				margin-top -5px
+				background-color #e8e8e8
+			
+		li	
+			a
+				display inline-block
+				padding 4.5px 10px
